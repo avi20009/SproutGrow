@@ -1,0 +1,129 @@
+/* Sprout & Grow - Module 13 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef6ea;
+    color: #2d4d2d;
+    margin: 0 10%;
+    line-height: 1.8;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+.logo {
+    width: 320px;
+    max-width: 100%;
+}
+
+/* Navigation */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #2f8f55;
+    padding: 14px 28px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background: #246f42;
+}
+
+/* Hero */
+
+.hero {
+    background: #389357;
+    color: white;
+    text-align: center;
+    padding: 70px 40px;
+    margin: 40px 0;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Content */
+
+.content {
+    margin: 40px 0;
+    overflow: auto;
+}
+
+.plant-image {
+    float: left;
+    max-width: 350px;
+    width: 35%;
+    height: auto;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 38px;
+    color: #2f6d3b;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Links */
+
+.content a {
+    color: #0a5da8;
+}
+
+/* Footer */
+
+footer {
+    background: #389357;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 8px 0;
+    vertical-align: middle;
+}
