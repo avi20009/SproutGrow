@@ -71,23 +71,27 @@ nav a:hover {
 
 .content {
     margin: 40px 0;
-    overflow: auto;
 }
 
+.float-image,
 .plant-image {
     float: left;
+    width: 30%;
     max-width: 350px;
-    width: 35%;
     height: auto;
-    margin-right: 25px;
-    margin-bottom: 15px;
+    margin: 0 25px 20px 0;
     border-radius: 10px;
+}
+
+.content {
+    overflow: auto;
 }
 
 .content h2 {
     font-size: 38px;
     color: #2f6d3b;
     margin-bottom: 15px;
+    margin-top: 0;
 }
 
 .content p {
