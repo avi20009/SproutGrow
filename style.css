@@ -76,9 +76,9 @@ nav a:hover {
 .float-image,
 .plant-image {
     float: left;
-    width: 30%;
-    max-width: 350px;
-    height: auto;
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
     margin: 0 25px 20px 0;
     border-radius: 10px;
 }
