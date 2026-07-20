@@ -29,56 +29,91 @@
     <p>Sign up for one of our upcoming gardening events.</p>
 </section>
 
-<section class="content">
+<section class="content registration-page">
 
-<form>
+<div class="registration-intro">
+    <p class="eyebrow">Join the community</p>
+    <h2>Reserve your spot in a local gardening event</h2>
+    <p>Tell us a little about yourself so we can share the right class, tour, or workshop with you.</p>
+</div>
 
-<label for="name">Full Name</label>
-<input type="text" id="name" name="name">
+<form class="registration-form">
 
-<label for="email">Email Address</label>
-<input type="email" id="email" name="email">
+    <div class="form-grid">
+        <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
 
-<label for="phone">Phone Number</label>
-<input type="text" id="phone" name="phone">
+        <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
 
-<label for="comments">Comments</label>
-<textarea id="comments" rows="5"></textarea>
+        <div class="field field-full">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="(555) 123-4567">
+        </div>
+    </div>
 
-<h3>Interests</h3>
+    <div class="field">
+        <label for="comments">Comments</label>
+        <textarea id="comments" rows="5" placeholder="Share your goals, questions, or accessibility needs"></textarea>
+    </div>
 
-<input type="checkbox" id="flowers">
-<label for="flowers">Flowers</label><br>
+    <fieldset class="form-group">
+        <legend>Interests</legend>
 
-<input type="checkbox" id="vegetables">
-<label for="vegetables">Vegetables</label><br>
+        <div class="choice-grid">
+            <label class="choice-item" for="flowers">
+                <input type="checkbox" id="flowers">
+                <span>Flowers</span>
+            </label>
 
-<input type="checkbox" id="herbs">
-<label for="herbs">Herbs</label><br><br>
+            <label class="choice-item" for="vegetables">
+                <input type="checkbox" id="vegetables">
+                <span>Vegetables</span>
+            </label>
 
-<h3>Experience Level</h3>
+            <label class="choice-item" for="herbs">
+                <input type="checkbox" id="herbs">
+                <span>Herbs</span>
+            </label>
+        </div>
+    </fieldset>
 
-<input type="radio" id="beginner" name="experience">
-<label for="beginner">Beginner</label><br>
+    <fieldset class="form-group">
+        <legend>Experience Level</legend>
 
-<input type="radio" id="experienced" name="experience">
-<label for="experienced">Experienced</label><br><br>
+        <div class="choice-grid choice-grid-two">
+            <label class="choice-item" for="beginner">
+                <input type="radio" id="beginner" name="experience">
+                <span>Beginner</span>
+            </label>
 
-<label for="event">Choose an Event</label>
+            <label class="choice-item" for="experienced">
+                <input type="radio" id="experienced" name="experience">
+                <span>Experienced</span>
+            </label>
+        </div>
+    </fieldset>
 
-<select id="event">
-    <option>Spring Gardening Workshop</option>
-    <option>Organic Gardening Class</option>
-    <option>Community Garden Tour</option>
-</select>
+    <div class="field">
+        <label for="event">Choose an Event</label>
 
-<br><br>
+        <select id="event">
+            <option>Spring Gardening Workshop</option>
+            <option>Organic Gardening Class</option>
+            <option>Community Garden Tour</option>
+        </select>
+    </div>
 
-<input type="submit" value="Register">
+    <div class="form-actions">
+        <input type="submit" value="Register">
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
 
 </form>
-
-<p><a href="index.html">← Back to Home</a></p>
 
 </section>
 
@@ -88,11 +123,11 @@
 
     <p>&copy; 2026 Sprout & Grow | Raleigh, NC</p>
 
-    <a href="https://facebook.com" target="_blank">
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
         <img src="images/facebook.png" alt="Facebook">
     </a>
 
-    <a href="https://x.com" target="_blank">
+    <a href="https://x.com" target="_blank" rel="noopener noreferrer">
         <img src="images/x.png" alt="X">
     </a>
 

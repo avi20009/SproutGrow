@@ -134,9 +134,53 @@ footer img {
 
 /* ---------- Form Styles ---------- */
 
+.registration-page {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registration-intro {
+    text-align: center;
+    background: linear-gradient(135deg, #2f8f55 0%, #4aa86a 100%);
+    color: white;
+    border-radius: 20px;
+    padding: 36px 32px;
+    box-shadow: 0 18px 40px rgba(36, 111, 66, 0.18);
+}
+
+.registration-intro .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.registration-intro h2 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.registration-intro p:last-child {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 1.02rem;
+    opacity: 0.96;
+}
+
 form {
-    max-width: 700px;
-    margin: 30px auto;
+    max-width: 760px;
+    margin: 28px auto 0;
+}
+
+.registration-form {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbf5 100%);
+    border: 1px solid rgba(47, 143, 85, 0.14);
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 18px 40px rgba(22, 53, 28, 0.08);
 }
 
 label {
@@ -145,34 +189,186 @@ label {
     font-weight: bold;
 }
 
+.registration-form label {
+    color: #244b2c;
+    font-size: 1rem;
+}
+
+.registration-form .field:first-child label,
+.registration-form .form-group:first-of-type {
+    margin-top: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 18px;
+}
+
+.field-full {
+    grid-column: 1 / -1;
+}
+
+.field {
+    margin-bottom: 2px;
+}
+
 input[type="text"],
 input[type="email"],
 textarea,
 select {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #999;
-    border-radius: 5px;
+    padding: 14px 15px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    border: 1px solid #c8d8ca;
+    border-radius: 14px;
     box-sizing: border-box;
+    background: #fff;
+    color: #244b2c;
+    font: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: 8px;
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #7a9280;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #2f8f55;
+    box-shadow: 0 0 0 4px rgba(47, 143, 85, 0.12);
+}
+
+.form-group {
+    border: 1px solid rgba(47, 143, 85, 0.16);
+    border-radius: 18px;
+    padding: 18px 18px 16px;
+    margin: 18px 0 0;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.form-group legend {
+    padding: 0 10px;
+    margin-left: -10px;
+    font-weight: 700;
+    color: #2f6d3b;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.choice-grid-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.choice-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    padding: 14px 16px;
+    border: 1px solid #d8e3da;
+    border-radius: 14px;
+    background: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.choice-item:hover {
+    transform: translateY(-1px);
+    border-color: #2f8f55;
+    box-shadow: 0 10px 22px rgba(36, 111, 66, 0.08);
+}
+
+.choice-item input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #2f8f55;
+    flex: 0 0 auto;
+}
+
+.choice-item span {
+    line-height: 1.2;
 }
 
 input[type="submit"] {
-    background: #2e8b57;
+    background: linear-gradient(135deg, #2f8f55 0%, #246f42 100%);
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
+    padding: 14px 28px;
+    border-radius: 999px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 14px 24px rgba(36, 111, 66, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 input[type="submit"]:hover {
-    background: #246b45;
+    transform: translateY(-1px);
+    filter: brightness(1.03);
+    box-shadow: 0 18px 28px rgba(36, 111, 66, 0.28);
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.form-actions p {
+    margin: 0;
+}
+
+.form-actions a {
+    color: #2f6d3b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.form-actions a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+    .registration-intro {
+        padding: 28px 20px;
+    }
+
+    .registration-intro h2 {
+        font-size: 1.7rem;
+    }
+
+    .registration-form {
+        padding: 22px;
+    }
+
+    .form-grid,
+    .choice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
 }
